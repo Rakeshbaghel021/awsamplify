@@ -4,7 +4,7 @@ import Navigation from "../../components/Navigation";
 const Dashboard = () => {
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <h4>dashboard</h4>
     </div>
   );
