@@ -40,14 +40,14 @@ export const mainListItems = (
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <ListItemText primary="Reports" />
-    </ListItem>
-    <ListItem button>
+      <ListItemText primary="Add Scripts" />
+    </ListItem> */}
+    {/* <ListItem button>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Integrations" />
-    </ListItem> */}
+    </ListItem>  */}
   </div>
 );
 
