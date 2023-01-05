@@ -31,19 +31,19 @@ const EditTrade = (props) => {
     const price = parseFloat(formValues.price);
     const target = parseFloat(formValues.target);
     // setLoading(true);
-    // await DataStore.save(
-    //   Trades.copyOf(location?.state?.item, (item) => {
-    //     item.price = price;
-    //     item.quantity = quantity;
-    //     // item.createdDate = formValues.createdDate;
-    //     // item.amount = parseFloat((price * quantity).toFixed(2));
-    //     // item.target = target;
-    //     return item;
-    //   })
-    // );
-    // setLoading(false);
-    // setFormValues({ ...initialFormState });
-    navigate(`/trades/${location?.state?.item.id}`);
+    await DataStore.save(
+      Trades.copyOf(location?.state?.item, (item) => {
+        item.price = price;
+        item.quantity = quantity;
+        // item.createdDate = formValues.createdDate;
+        // item.amount = parseFloat((price * quantity).toFixed(2));
+        // item.target = target;
+        return item;
+      })
+    );
+    setLoading(false);
+    setFormValues({ ...initialFormState });
+    // navigate(`/trades/${location?.state?.item.id}`);
   };
 
   const updateField = (key, value) => {
