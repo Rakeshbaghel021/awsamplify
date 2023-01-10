@@ -29,13 +29,15 @@ export const mainListItems = (
         <ListItemText primary="Trades" />
       </ListItem>
     </Link>
+    <Link to="/upload">
+      <ListItem button>
+        <ListItemIcon>
+          <PeopleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Upload Pictures" />
+      </ListItem>
+    </Link>
 
-    <ListItem button>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Open Positions" />
-    </ListItem>
     {/* <ListItem button>
       <ListItemIcon>
         <BarChartIcon />

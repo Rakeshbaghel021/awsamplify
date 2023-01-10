@@ -7,6 +7,7 @@ import EditTrade from "./pages/Trades/editTrade";
 import ViewTrade from "./pages/Trades/ViewTrade";
 import Login from "./pages/auth/SigninForm";
 import SignUpForm from "./pages/auth/SignupForm";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/trade/add" element={<AddTrade />} />
           <Route exact path="/trade/edit/:id" element={<EditTrade />} />{" "}
           <Route exact path="/trade" element={<Trade />} />
+          <Route exact path="/upload" element={<Upload />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/signup" element={<SignUpForm />} />
           <Route exact path="/" element={<Login />} />
